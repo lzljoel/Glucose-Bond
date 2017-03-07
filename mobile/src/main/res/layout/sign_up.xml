@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/gb_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:paddingBottom="30dp"
+        android:layout_gravity="center_horizontal" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="445dp"
+            android:orientation="vertical"
+            android:background="@drawable/small_bck"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="286dp"
+                android:layout_height="40dp"
+                android:hint="Username"
+                android:background="@drawable/text_box"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="286dp"
+                android:layout_height="40dp"
+                android:hint="First Name"
+                android:background="@drawable/text_box"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp" />
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="286dp"
+                android:layout_height="40dp"
+                android:hint="Last Name"
+                android:background="@drawable/text_box"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp" />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="286dp"
+                android:layout_height="40dp"
+                android:hint="Passwords"
+                android:background="@drawable/text_box"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp" />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="286dp"
+                android:layout_height="40dp"
+                android:hint="Address"
+                android:background="@drawable/text_box"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp" />
+            <EditText
+                android:id="@+id/child_name"
+                android:layout_width="286dp"
+                android:layout_height="40dp"
+                android:hint="Child Name"
+                android:background="@drawable/text_box"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Child Age"
+                android:layout_marginLeft="35dp"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/childAge"
+                android:id="@+id/age_list"
+                android:layout_marginLeft="20dp">
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Child Diagnosed Date/Year"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/diag_month"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_box"
+                    android:inputType="number"
+                    android:hint="MM"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="/"
+                    android:textSize="30dp"
+                    android:layout_gravity="center_vertical" />
+                <EditText
+                    android:id="@+id/diag_day"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_box"
+                    android:inputType="number"
+                    android:hint="DD"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="/"
+                    android:textSize="30dp"
+                    android:layout_gravity="center_vertical" />
+                <EditText
+                    android:id="@+id/diag_year"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_box"
+                    android:inputType="number"
+                    android:hint="YYYY"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Sign Up"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sign"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

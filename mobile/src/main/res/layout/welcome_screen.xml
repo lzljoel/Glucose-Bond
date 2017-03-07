@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gb_icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:id="@+id/forums">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forum"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forums"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:id="@+id/education">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/education"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/button_background"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:id="@+id/mentorship">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mentor"
+            android:layout_marginLeft="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentorship"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</LinearLayout>

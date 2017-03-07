@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303c4c">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:id="@+id/imageView5"
+            android:src="@drawable/glucosebondicon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Video Resources"
+            android:id="@+id/textView"
+            android:textColor="#fefbfb"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type 1 Diabetes: A Guide for Children"
+        android:id="@+id/textView7"
+        android:textColor="#fbf9f9"
+        android:textSize="30dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="This short film from Diabetes UK aims to explain type 1 diabetes to children and show those living with type 1 that they are not alone."
+        android:textSize="15dp"
+        android:id="@+id/textView8"
+        android:textColor="#fdfbfb"
+        android:layout_below="@id/youtube_view"
+        android:layout_margin="10dp" />
+
+
+</RelativeLayout>

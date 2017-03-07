@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#303c4c">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/linearLayout"
+        android:background="@color/small_bck">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/glucosebondicon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Find a Mentor"
+            android:id="@+id/textView"
+            android:textColor="#fcf9f9"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginTop="15dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/more"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="160dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView6"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/secmele_profile_circle"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Maria Watson"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#faf7f7"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginStart="34dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:background="#ca5252"
+        android:textColor="#f9f8f8"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp" />
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mentor since: 3.5.16"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#faf7f7"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Child Diagnosed Year: 2013"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#faf7f7"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="System Used: Pump(OmniPod)"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#faf7f7"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
